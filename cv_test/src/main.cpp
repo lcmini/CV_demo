@@ -87,14 +87,6 @@ Mat picture_process::hough_detect(Mat pic,Mat src)
              std::cout << "圆的坐标是 " << "x " << center.x << " y: " << center.y << std::endl;
          }
         std::cout << "the number of circle is " << circles.size() << std::endl;
-
-        /*std::cout << "第1个圆和第2个圆横坐标之间的距离" <<x[1] - x[0] << std::endl;
-        std::cout << "第2个圆和第3个圆横坐标之间的距离" <<x[2] - x[1] << std::endl;
-        std::cout << "第3个圆和第4个圆横坐标之间的距离" <<x[3] - x[2] << std::endl;
-        std::cout << "第1个圆和第2个圆纵坐标之间的距离" <<y[1] - y[0] << std::endl;
-        std::cout << "第2个圆和第3个圆纵坐标之间的距离" <<y[2] - y[1] << std::endl;
-        std::cout << "第2个圆和第3个圆纵坐标之间的距离" <<y[3] - y[2] << std::endl;*/
-
         float l1,l2,l3;
         l1 =length(x[3]-x[1],y[3]-y[1]);
         l2 =length(x[1]-x[0],y[1]-y[0]);
@@ -102,9 +94,9 @@ Mat picture_process::hough_detect(Mat pic,Mat src)
         std::cout << "第1个圆和第2个圆球的距离是 " << l1 << std::endl;
         std::cout << "第2个圆和第3个圆球的距离是 " << l2 << std::endl;
         std::cout << "第3个圆和第4个圆球的距离是 " << l3 << std::endl;
-        cv::line(src,Point(x[3],y[3]),Point(x[1],y[1]),Scalar(0,255,255),5);
-        cv::line(src,Point(x[1],y[1]),Point(x[0],y[0]),Scalar(255,255,0),5);
-        cv::line(src,Point(x[3],y[3]),Point(x[2],y[2]),Scalar(255,0,255),5);
+        //cv::line(src,Point(x[3],y[3]),Point(x[1],y[1]),Scalar(0,255,255),5);
+        //cv::line(src,Point(x[1],y[1]),Point(x[0],y[0]),Scalar(255,255,0),5);
+        //cv::line(src,Point(x[3],y[3]),Point(x[2],y[2]),Scalar(255,0,255),5);
 
 
         cv::imshow("Hough", src);
