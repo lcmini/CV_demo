@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/next/桌面/gitspace/cv_test/build/src",
+  "command": "/usr/bin/g++  -I/home/next/桌面/gitspace/cv_test/src/{OpenCV_INCLUDE_DIRS} -I/home/next/桌面/gitspace/cv_test/src/../include -isystem /usr/include/opencv4 -g -o CMakeFiles/demo.dir/main.cpp.o -c /home/next/桌面/gitspace/cv_test/src/main.cpp",
+  "file": "/home/next/桌面/gitspace/cv_test/src/main.cpp"
+}
+]
